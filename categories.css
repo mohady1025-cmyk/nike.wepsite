@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    
+}
+
+.login-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px;
+    z-index: 10;
+}
+
+.back-link{
+    color: whitesmoke;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e10600;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.back-link:hover{
+    text-decoration: underline;
+    background-color: #ff1e1e;
+    transform: scale(1.05);
+}
+
+body{
+    background-color: black;
+    padding-top: 80px;
+    overflow-y: scroll;
+}
+
+
+.categories-section{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 100px 50px 50px 50px;
+    background-color: #111;
+    min-height: 100vh;
+}
+
+.category{
+    background-color: black;
+    border: 2px solid black;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+}
+
+.category-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    background-color: rgba(34, 34, 34, 0.8);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    color: whitesmoke;
+}
+.category:hover{
+    transform: scale(1.05);
+}
+
+.category img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.vap-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.vap-price{
+    font-size: 16px;
+    margin-top: 2px;
+    color: #e10600;
+}
